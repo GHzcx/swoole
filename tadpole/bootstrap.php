@@ -24,5 +24,4 @@ $container['view'] = function ($container) {    // register template on containe
 
     return $view;
 };
-
 return $app;

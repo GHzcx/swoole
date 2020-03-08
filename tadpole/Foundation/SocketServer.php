@@ -61,7 +61,7 @@ class SocketServer
             case 'update':
                 $stat = new Stat();
                 $nameArray = explode(',', $this->name);
-                $name = $nameArray[rand(0, count($nameArray))];
+                $name = $nameArray[rand(0, count($nameArray) - 1)];
                 $status = [
                         'type' => 'update',
                         'id' => $client,

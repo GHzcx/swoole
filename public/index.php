@@ -7,9 +7,8 @@ $app = require '../tadpole/bootstrap.php';
 
 $tadpoleController = 'Tadpole\Controllers\tadpoleController';
 
+$app->get('/home', \Tadpole\Controllers\tadpoleController::class.':home');
 
-//tadpole chat room
-$app->get('/home', $tadpoleController.':home');
 
 
 $app->run();
